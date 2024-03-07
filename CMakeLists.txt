@@ -4,6 +4,11 @@ project(example)
 # Generate compile_commands.json
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+# Set Standard
+set(CMAKE_CXX_STANDARD 11) # Minimum required for raylib.h
+# set(CMAKE_CXX_STANDARD 17) # Version in CMake CPP template
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 # Dependencies
 set(RAYLIB_VERSION 5.0)
 find_package(raylib ${RAYLIB_VERSION} QUIET) # QUIET or REQUIRED
@@ -25,7 +30,7 @@ endif()
 
 # Our Project
 
-add_executable(${PROJECT_NAME} core_basic_window.c)
+add_executable(${PROJECT_NAME} src/main.cpp)
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)
 
