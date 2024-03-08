@@ -29,9 +29,8 @@ Useful Links
 VSCode Extensions: C/C++ Extension Pack
 
 1. Copy `raylib` source files from GitHub into `/external/raylib`
-
-- `raylib` itself also includes the `glfw` source code in `src/external/glfw`
-- In [C++ - The Cherno](https://youtu.be/or1dAmUO8k0?si=kBGf5NhYgnwWSLOv), this is also done to have all the dependencies self contained in a single repository. Fixing to a single version, no fetching, less complexity, having everything as a static library.
+    - `raylib` itself also includes the `glfw` source code in `src/external/glfw`
+    - In [C++ - The Cherno](https://youtu.be/or1dAmUO8k0?si=kBGf5NhYgnwWSLOv), this is also done to have all the dependencies self contained in a single repository. Fixing to a single version, no fetching, less complexity, having everything as a static library.
 
 2. Create `.gitignore` and ignore `.vscode` and `build`.
     - `/build` will be created during CMake compile, may differ between platforms,
