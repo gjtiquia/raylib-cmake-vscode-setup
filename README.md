@@ -10,6 +10,7 @@ Useful Links
 - [C99 CMake Template](https://github.com/SasLuca/raylib-cmake-template)
 - [C++ CMake Template](https://github.com/SasLuca/raylib-cpp-cmake-template)
 - [Using Libraries in C++ (Static Linking) - The Cherno](https://www.youtube.com/watch?v=or1dAmUO8k0&ab_channel=TheCherno)
+- [Automatically add all files in a folder to a target using CMake - StackOverflow](https://stackoverflow.com/questions/3201154/automatically-add-all-files-in-a-folder-to-a-target-using-cmake)
 
 ## Setup
 
@@ -34,7 +35,7 @@ VSCode Extensions: C/C++ Extension Pack
 
 2. Create `.gitignore` and ignore `.vscode` and `build`.
     - `/build` will be created during CMake compile, may differ between platforms,
-    - `/.vscode` will be created with `files.associations` when navigating header references.
+    - `/.vscode` may differ between development machines, ignoring it is safest.
 
 ## Compile
 

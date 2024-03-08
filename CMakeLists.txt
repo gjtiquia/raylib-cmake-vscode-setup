@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.11) # FetchContent is available in 3.11+
+cmake_minimum_required(VERSION 3.12)
 project(example)
 
 # Set Standard
@@ -11,7 +11,12 @@ set(BUILD_GAMES    OFF CACHE BOOL "" FORCE) # or games
 add_subdirectory(external/raylib)
 
 # Our Project
-add_executable(${PROJECT_NAME} src/main.cpp)
+file(GLOB example_SRC CONFIGURE_DEPENDS 
+    "src/*.h" 
+    "src/*.cpp"
+)
+
+add_executable(${PROJECT_NAME} ${example_SRC})
 target_link_libraries(${PROJECT_NAME} raylib)
 
 # Checks if OSX and links appropriate frameworks (Only required on MacOS)
