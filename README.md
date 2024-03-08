@@ -61,5 +61,5 @@ Instead of running the commands by hand in VSCode, can set it up with VSCode ext
 
 1. __Command Palette > CMake: Configure__
 2. Choose a compiler (eg. Clang on MacOS)
-3. Build + Play button on the bottom of the window works.
-4. Or can Build + Play with CMake extension.
+3. Build + Play button on the status bar at bottom of the window works.
+4. Or can Build + Play with CMake extension in the sidebar.
